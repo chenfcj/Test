@@ -1,0 +1,130 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {"path": "pages/home/index","style": {"navigationBarTitleText": "首页"}},
+		
+		{  
+    "path" : "pages/home/index", 
+    "style" : {  
+        "navigationBarTitleText" : "首页",  
+        "app-plus" : {  
+            "titleNView" : {  
+                "buttons" : [  
+                    {  
+                        "text" : "北京市",  
+                        "fontSize" : "14",  
+                        "select" : true,  
+                        "width" : "auto",
+						"float":"left"
+                    }  
+                ] ,
+				    "tags" : [{  
+						"tag" : "img",  
+						"src" : "static/img/message.png",  
+						"position" : {  
+						"right" : "10",  
+						"top" : "10",  
+						 "width" : "20px",  
+						 "height" : "20px"  
+						}}  ]
+            }}}}  ,
+
+		
+		{"path": "pages/index/login","style": {"navigationBarTitleText": "登录"}},
+		{"path": "pages/index/register","style": {"navigationBarTitleText": "注册"}},
+		// {"path": "pages/home/fl","style": {"navigationBarTitleText": "发现"}},
+		
+				{"path" : "pages/home/fl","style" : {"app-plus": {  "titleNView" : {"titleText" : "发现",  
+		     "tags" : [{  
+					        "tag" : "img",  
+					        "src" : "static/img/fl/star.png",  
+					        "position" : {  
+							"right" : "10",  
+							"top" : "10",  
+							 "width" : "20px",  
+							 "height" : "20px"  
+					        }}  ]  }}}},
+							
+							
+		
+		
+		
+		
+		{"path": "pages/home/gwc","style": {"navigationBarTitleText": "购物车"}},
+		{"path": "pages/home/dd","style": {"navigationBarTitleText": "订单"}},
+		{"path" : "pages/home/person","style" : {"app-plus": {  "titleNView" : {"titleText" : "个人中心",  
+             "tags" : [{  
+                        "tag" : "img",  
+                        "src" : "static/img/setting.png",  
+                        "position" : {  
+						"left" : "10",  
+						"top" : "10",  
+						"width" : "20px",  
+						"height" : "20px"  
+                        }}  ,
+					      {  
+					        "tag" : "img",  
+					        "src" : "static/img/message.png",  
+					        "position" : {  
+							"right" : "10",  
+							"top" : "10",  
+							 "width" : "20px",  
+							 "height" : "20px"  
+					        }}  ]  }}}},
+		{"path": "pages/person/qd","style": {"navigationBarTitleText": "签到"}},
+		{"path": "pages/person/tc","style": {"navigationBarTitleText": "退出登录"}}
+	
+  
+
+	
+	
+	
+	],
+	// "globalStyle": {
+	// 	"navigationBarTextStyle": "black",
+	// 	"navigationBarTitleText": "uni-app",
+	// 	"navigationBarBackgroundColor": "#F8F8F8",
+	// 	"backgroundColor": "#F8F8F8"
+	// },
+		"globalStyle": {
+			"navigationBarTextStyle": "black",
+			"navigationBarTitleText": "uni-app",
+			"navigationBarBackgroundColor": "#48C23D",
+			"backgroundColor": "#48C23D"
+		},
+		"tabBar": {
+	        "color": "#7A7E83",
+	        "selectedColor": "#3cc51f",
+	        "borderStyle": "black",
+	        "backgroundColor": "#FCFCFD",
+	    "list": [
+			{
+			"pagePath": "pages/home/index",
+			"iconPath": "static/img/men/ind1.png",
+			"selectedIconPath": "static/img/men/ind.png",
+			"text": "主页"},
+			
+			{
+			    "pagePath": "pages/home/fl",
+			    "iconPath": "static/img/men/fax1.png",
+			    "selectedIconPath": "static/img/men/fax.png",
+			    "text": "发现"},
+			{
+			    "pagePath": "pages/home/gwc",
+			    "iconPath": "static/img/men/car1.png",
+			    "selectedIconPath": "static/img/men/car.png",
+			    "text": "购物车"},
+			{
+			    "pagePath": "pages/home/dd",
+			    "iconPath": "static/img/men/dd1.png",
+			    "selectedIconPath": "static/img/men/dd.png",
+			    "text": "订单"},
+			{
+			    "pagePath": "pages/home/person",
+			    "iconPath": "static/img/men/wod1.png",
+			    "selectedIconPath": "static/img/men/wod.png",
+			    "text": "我的"
+			}
+			
+	]
+	    }
+}
